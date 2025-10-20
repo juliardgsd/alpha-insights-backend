@@ -76,6 +76,10 @@ app.get('/health', (req, res) => {
   res.json({ status: 'OK' });
 });
 
+app.get('/', (req, res) => {
+  res.json({ message: 'Backend Alpha Insights rodando!', status: 'OK' });
+});
+
 app.listen(PORT, () => {
   console.log(`✅ Servidor rodando na porta ${PORT}`);
 });
